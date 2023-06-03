@@ -6,7 +6,8 @@ btnCep.addEventListener('click', handleClick)
 
 function handleClick(event) {
   event.preventDefault()
-  console.log(event);
+  const cep = inputCep.value
+  buscaCep(cep)
 }
 
 function buscaCep(cep) {
@@ -17,4 +18,3 @@ function buscaCep(cep) {
   })
 }
 
-buscaCep(57022210)
